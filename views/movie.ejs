@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="./css/styles.css" rel="stylesheet"> 
+    </head>
+    <body>
+        <div class='container'>
+
+            <div class='jumbotron'>
+                <div class='container'>
+                <h1 class='display-4'>Hello Movies</h1>
+                <p>Here are the details of the movie you selected</p>
+                </div>
+            </div>
+
+            <div class = 'row'>
+                <div class = 'col'>
+                <h2><%= movie.title%><h2>
+                <h2><%= movie.plot%><h2>
+                <a href='/'>Home</a>
+                </div>
+            </div>
+           
+
+        </div>
+    </body>
+</html>
