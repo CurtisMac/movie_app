@@ -1,10 +1,12 @@
 const express = require('express')
-const movies = require('../functions/movies')
+const api = require('../functions/api')
 const router = express.Router()
 
 router.get('/', (req, res) => {
-    res.render('index', {
-        movies,
+    api.getMovies((moviesObj) => {
+        res.render('index', {
+            movies: moviesObj
+        })
     })
 })
 

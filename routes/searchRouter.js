@@ -1,5 +1,5 @@
 const express = require('express')
-const movies = require('../functions/movies')
+const movies = require('../functions/api')
 const searchRouter = express.Router()
 
 searchRouter.get('/', (req, res) => {

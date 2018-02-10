@@ -1,14 +1,13 @@
 const express = require('express')
-const movies = require('../functions/movies')
+const api = require('../functions/api')
 const movieRouter = express.Router()
 
 movieRouter.get('/:movieId', (req, res) => {
     let movieId = req.params.movieId
-    let movie = movies.find((obj) => {
-        if (obj.id == movieId) { return obj }
-    })
-    res.render('movie', {
-        movie,
+    api.getMovie(movieId, (movie) => {
+        res.render('movie', {
+            movie,
+        })
     })
 })
 
