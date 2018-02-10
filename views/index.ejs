@@ -3,16 +3,22 @@
                 <% if (movies.length==0){ %>
                     <h2>Sorry, couldn't find any movies!</h2>
                 <% } %>
-            
-                <% for (let i=0; i<movies.length; i++){ %>
-                <div class='media'>
-                    <img class='mr-3' src=<%=`https://image.tmdb.org/t/p/w200${movies[i].poster_path}`%> alt='Movie poster'>
-                    <div class='media-body'>
-                        <h5 'mt-0'>Title: <%= movies[i].title  %> </h5>
-                        <a href='/movie/<%= movies[i].id %>'>More</a>
-                    </div>
+
+                <div class='row'>
+                    <% for (let i=0; i<movies.length; i++){ %>
+                        <div class='col-sm-12 col-lg-6 movieBox'>
+                            <div class='row no-gutters'>
+                                <div class='col-6'>
+                                    <a href='/<%= movies[i].id %>'><img class='img-fluid' src=<%=`https://image.tmdb.org/t/p/w200${movies[i].poster_path}`%> alt='Movie poster'></a>
+                                </div>
+                                <div class='col-6'>    
+                                    <a href='/<%= movies[i].id %>'><h2 'mt-0'><%= movies[i].title%> </h2></a>
+                                    <p>Average rating: <%= movies[i].vote_average %></p>
+                                </div>    
+                            </div>
+                        </div>
+                    <%}%>   
                 </div>
-                <%}%>   
         </div>
     </body>
 </html>

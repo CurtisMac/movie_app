@@ -1,0 +1,38 @@
+$background-color: #000000;
+$font-color: white;
+$fontcolor-headings: #2292A4;
+
+body {
+    background-color: $background-color;
+    color: $font-color;
+    margin-bottom: 40px;
+}
+
+%header {
+    color: $fontcolor-headings;
+}
+
+h1 {
+    @extend %header;
+    font-weight: bold;
+}
+
+h2 {
+    @extend %header;
+    font-size: 24px;
+}
+
+a {
+    color: $fontcolor-headings;
+    font-weight: bold;
+}
+
+.jumbotron {
+    background-color: #a00b58;
+}
+
+.movieBox {
+    padding: 10px;
+    border: 1px solid white;
+}
+

@@ -1,5 +1,5 @@
 const request = require('request')
-const url = 'https://api.themoviedb.org/3/discover/movie?api_key=1eb7ae5fe70ccaa91530537bdf3dc0ea&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1'
+const url = 'https://api.themoviedb.org/3/discover/movie?api_key=1eb7ae5fe70ccaa91530537bdf3dc0ea&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&primary_release_year=2018'
 
 module.exports = {
     getMovies: function (renderMovies) {

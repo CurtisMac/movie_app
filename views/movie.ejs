@@ -1,12 +1,15 @@
-<%- include partials/header %>
+<%-include partials/header%>
+
+
             <h3><%=movie.status_message%></h3>
             <div class = 'row'>
                 <div class = 'col-4'>
-                    <img class='mr-3' src=<%=`https://image.tmdb.org/t/p/w300${movie.poster_path}`%> alt='Movie poster'>
+                    <img class='img-fluid' src=<%=`https://image.tmdb.org/t/p/w300${movie.poster_path}`%> alt='Movie poster'>
                 </div>
                 <div class = 'col-8'>
-                    <h2><%= movie.title%><h2>
-                    <h5><%= movie.overview%></h5>
+                    <h2><%= movie.title%></h2>
+                    <p>Relase date: <%= movie.release_date%></p>
+                    <p><%= movie.overview%></p>
                 </div>
             </div>
 

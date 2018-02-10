@@ -10,7 +10,7 @@ app.set('view engine', 'ejs')
 
 app.use('/', router)
 app.use('/search/', searchRouter)
-app.use('/movie/', movieRouter)
+app.use('/', movieRouter)
 
 app.listen(port, () => {
     console.log(`Listening on port ${port}`)

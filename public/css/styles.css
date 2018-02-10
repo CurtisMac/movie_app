@@ -1,0 +1,24 @@
+body {
+  background-color: #000000;
+  color: white;
+  margin-bottom: 40px; }
+
+h1, h2 {
+  color: #2292A4; }
+
+h1 {
+  font-weight: bold; }
+
+h2 {
+  font-size: 24px; }
+
+a {
+  color: #2292A4;
+  font-weight: bold; }
+
+.jumbotron {
+  background-color: #a00b58; }
+
+.movieBox {
+  padding: 10px;
+  border: 1px solid white; }
